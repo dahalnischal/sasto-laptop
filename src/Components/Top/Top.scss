@@ -1,0 +1,50 @@
+.image-div {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+  background-repeat: no-repeat;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    opacity: 50%;
+  }
+  .text-div {
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: brown;
+    left: 42%;
+    margin-top: 100px;
+    .search-div {
+      position: relative;
+      .input-text {
+        width: 300px;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+
+        &::placeholder {
+          padding-left: 10px;
+        }
+      }
+      .icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+}

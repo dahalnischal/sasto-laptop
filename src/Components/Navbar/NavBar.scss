@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  gap: 15px;
+  background: rgb(248, 233, 233);
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+
+  .text-div {
+    align-items: center;
+    margin-left: auto;
+
+    ul {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+
+      li {
+        text-decoration: none;
+        a {
+          text-decoration: none;
+          color: rgb(126, 36, 36);
+          font-size: 20px;
+          font-weight: bold;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .icon-div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+
+    .icon {
+      font-size: 25px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(241, 126, 126);
+      }
+    }
+  }
+}
