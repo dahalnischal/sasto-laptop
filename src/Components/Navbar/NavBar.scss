@@ -9,12 +9,13 @@
   --textColor: black;
   --headerHeight: 3rem;
   --iconColor: #ffff;
+  --transistion: all 0.5s ease-in-out;
 }
 
 .navbar {
   display: flex;
   gap: 15px;
-  background:transparent;
+  background: transparent;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
@@ -31,14 +32,35 @@
       list-style: none;
 
       li {
+        padding: 0px 5px;
         text-decoration: none;
         a {
+          position: relative;
           text-decoration: none;
           color: var(--iconColor);
           font-size: 20px;
           // font-weight: bold;
+          transition: var(--transistion);
+
           &:hover {
             color: var(--secondaryColor);
+            transition: var(--transistion);
+            &::before {
+              left: 0;
+              right: auto;
+              width: 100%;
+              transition: var(--transistion);
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            right: 0;
+            background: var(--secondaryColor);
+            transition: var(--transistion);
           }
         }
       }
@@ -50,13 +72,24 @@
     justify-content: flex-end;
     gap: 15px;
 
-    .icon {
-      font-size: 25px;
-      cursor: pointer;
-      color: var(--iconColor);
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+      padding: 0px 5px;
 
+      .icon {
+        font-size: 25px;
+        cursor: pointer;
+        color: var(--iconColor);
+        transition: all 0.5s ease-in-out;
+      }
       &:hover {
         background-color: var(--secondaryColor);
+        padding: 5px;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out;
       }
     }
   }

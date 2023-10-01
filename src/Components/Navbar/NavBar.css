@@ -1,0 +1,88 @@
+:root {
+  --primaryColor: #009688;
+  --primaryHover: rgba(2, 136, 123);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: rgb(0, 0, 0);
+  --formColor: hsl(151.62deg 7.63% 84.82%);
+  --projectCardColor: #072340;
+  --textColor: black;
+  --headerHeight: 3rem;
+  --iconColor: #ffff;
+  --transistion: all 0.5s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  background: transparent;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  background-color: var(--primaryHover);
+}
+.navbar .text-div {
+  align-items: center;
+  margin-left: auto;
+}
+.navbar .text-div ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.navbar .text-div ul li {
+  padding: 0px 5px;
+  text-decoration: none;
+}
+.navbar .text-div ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--iconColor);
+  font-size: 20px;
+  transition: var(--transistion);
+}
+.navbar .text-div ul li a:hover {
+  color: var(--secondaryColor);
+  transition: var(--transistion);
+}
+.navbar .text-div ul li a:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+  transition: var(--transistion);
+}
+.navbar .text-div ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background: var(--secondaryColor);
+  transition: var(--transistion);
+}
+.navbar .icon-div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.navbar .icon-div .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  padding: 0px 5px;
+}
+.navbar .icon-div .icons .icon {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--iconColor);
+  transition: all 0.5s ease-in-out;
+}
+.navbar .icon-div .icons:hover {
+  background-color: var(--secondaryColor);
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=NavBar.css.map */

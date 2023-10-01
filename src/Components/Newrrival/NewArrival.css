@@ -1,0 +1,83 @@
+:root {
+  --primaryColor: #009688;
+  --primaryHover: rgba(2, 136, 123);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: rgb(0, 0, 0);
+  --formColor: hsl(151.62deg 7.63% 84.82%);
+  --projectCardColor: #072340;
+  --textColor: black;
+  --headerHeight: 3rem;
+  --iconColor: #ffff;
+}
+
+.featured-div {
+  padding: 40px;
+}
+.featured-div .card-top-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+.featured-div .card-top-div span {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.featured-div .card-top-div span:hover {
+  color: var(--primaryHover);
+}
+.featured-div .cards-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.featured-div .cards-div .card-div {
+  overflow: hidden;
+  max-width: calc(20% - 10px);
+  height: 300px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.featured-div .cards-div .card-div:hover {
+  transform: scale(1.05);
+}
+.featured-div .cards-div .card-div .image-div {
+  height: 200px;
+  width: 200px;
+}
+.featured-div .cards-div .card-div .image-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured-div .cards-div .card-div .text-div {
+  background-color: var(--formColor);
+  height: 100px;
+  padding-left: 10px;
+  color: var(--primaryColor);
+  cursor: pointer;
+  padding-top: 10px;
+}
+.featured-div .cards-div .card-div .text-div:hover {
+  color: var(--primaryHover);
+}
+.featured-div .icon {
+  top: 30%;
+  font-size: 24px;
+  cursor: pointer;
+  color: #007bff; /* Default icon color */
+}
+.featured-div .icon.disabled {
+  color: #ccc; /* Disabled icon color */
+  cursor: not-allowed;
+}/*# sourceMappingURL=NewArrival.css.map */

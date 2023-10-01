@@ -27,9 +27,18 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="icon-div">
+        <div className="icons">
         <AiOutlineShoppingCart className="icon"/>
+
+        </div>
+        <div className="icons">
         <IoIosNotifications className="icon"/>
+
+        </div>
+        <div className="icons">
         <MdOutlineAccountCircle className="icon"/>
+
+        </div>
       </div>
       <div className="icon-div"></div>
     </div>
