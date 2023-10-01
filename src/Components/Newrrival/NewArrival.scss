@@ -1,3 +1,16 @@
+:root {
+  --primaryColor: #009688;
+  --primaryHover: rgba(2, 136, 123);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: rgb(0, 0, 0);
+  --formColor: hsl(151.62deg 7.63% 84.82%);
+  --projectCardColor: #072340;
+  --textColor: black;
+  --headerHeight: 3rem;
+  --iconColor: #ffff;
+}
+
 .featured-div {
   padding: 40px;
   .card-top-div {
@@ -8,7 +21,11 @@
     span {
       font-size: 20px;
       font-weight: bold;
-      color: rgb(126, 36, 36);
+      color: var(--primaryColor);
+      cursor: pointer;
+      &:hover{
+        color: var(--primaryHover);
+      }
     }
   }
   .cards-div {
@@ -27,10 +44,10 @@
       align-items: center;
       justify-content: center;
       transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
-      /* Transition for hover effect */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
       &:hover {
-        transform: scale(1.05); /* Scale up on hover */
+        transform: scale(1.05); 
       }
       
       .image-div {
@@ -44,10 +61,15 @@
         }
       }
       .text-div{
-        background-color: aliceblue;
+        background-color: var(--formColor);
         height: 100px;
         padding-left: 10px;
-        
+        color: var(--primaryColor);
+        cursor: pointer;
+        padding-top: 10px;
+        &:hover{
+color: var(--primaryHover);
+        }
       }
 
     }

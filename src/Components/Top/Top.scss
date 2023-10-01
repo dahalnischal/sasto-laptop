@@ -1,9 +1,23 @@
+:root {
+  --primaryColor: #009688;
+  --primaryHover: rgba(2, 136, 123);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: rgb(0, 0, 0);
+  --formColor: hsl(151.62deg 7.63% 84.82%);
+  --projectCardColor: #072340;
+  --textColor: black;
+  --headerHeight: 3rem;
+  --iconColor: #ffff;
+}
+
 .image-div {
   height: 400px;
   width: 100%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
   background-repeat: no-repeat;
+ 
   img {
     width: 100%;
     object-fit: cover;
@@ -19,9 +33,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    color: brown;
+    color: var(--iconColor);
     left: 42%;
     margin-top: 100px;
+    gap: 20px;
     .search-div {
       position: relative;
       .input-text {
@@ -30,6 +45,8 @@
         border: none;
         outline: none;
         border-radius: 10px;
+        color: var(--BgColor);
+        background: var(--formColor);
 
         &::placeholder {
           padding-left: 10px;

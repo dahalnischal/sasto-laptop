@@ -1,4 +1,26 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;600&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&family=Poppins:wght@200;300;500;600;700&family=Roboto:wght@300&family=Titillium+Web:wght@200;400;600;700&family=Work+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --primaryColor: #009688;
+  --primaryHover: rgba(2, 136, 123);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: rgb(0, 0, 0);
+  --formColor: hsl(151.62deg 7.63% 84.82%);
+  --projectCardColor: #072340;
+  --textColor: black;
+  --headerHeight: 3rem;
+  --iconColor: #ffff;
+}
+
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+html {
+  scroll-behavior: smooth;
 }

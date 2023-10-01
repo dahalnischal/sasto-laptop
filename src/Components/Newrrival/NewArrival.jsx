@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Featured.scss";
+import "./NewArrival.scss";
 
 //import images
 import img3 from "../../assets/img3.webp";
@@ -57,7 +57,7 @@ const cardDetails = [
   },
 ];
 
-const Featured = () => {
+const NewArrival = () => {
   const cardsPerPage = 5; // Number of cards to display per page
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -67,23 +67,23 @@ const Featured = () => {
   const visibleCards = cardDetails.slice(startIndex, endIndex);
 
   // Function to handle next and previous clicks
- const handleNext = () => {
-   if (currentPage < Math.ceil(cardDetails.length / cardsPerPage) - 1) {
-     setCurrentPage(currentPage + 1);
-   }
- };
+  const handleNext = () => {
+    if (currentPage < Math.ceil(cardDetails.length / cardsPerPage) - 1) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
 
- const handlePrev = () => {
-   if (currentPage > 0) {
-     setCurrentPage(currentPage - 1);
-   }
- };
+  const handlePrev = () => {
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
 
   return (
     <div>
       <div className="featured-div">
         <div className="card-top-div">
-          <span>Featured items</span>
+          <span>New Arrival</span>
           <span>See all</span>
         </div>
         <div className="cards-div">
@@ -110,5 +110,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
-
+export default NewArrival;

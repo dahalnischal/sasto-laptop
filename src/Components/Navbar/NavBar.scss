@@ -1,10 +1,25 @@
+:root {
+  --primaryColor: #009688;
+  --primaryHover: rgba(2, 136, 123);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: rgb(0, 0, 0);
+  --formColor: hsl(151.62deg 7.63% 84.82%);
+  --projectCardColor: #072340;
+  --textColor: black;
+  --headerHeight: 3rem;
+  --iconColor: #ffff;
+}
+
 .navbar {
   display: flex;
   gap: 15px;
-  background: rgb(248, 233, 233);
+  background:transparent;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
+  height: 60px;
+  background-color: var(--primaryHover);
 
   .text-div {
     align-items: center;
@@ -19,11 +34,11 @@
         text-decoration: none;
         a {
           text-decoration: none;
-          color: rgb(126, 36, 36);
+          color: var(--iconColor);
           font-size: 20px;
-          font-weight: bold;
+          // font-weight: bold;
           &:hover {
-            color: red;
+            color: var(--secondaryColor);
           }
         }
       }
@@ -38,9 +53,10 @@
     .icon {
       font-size: 25px;
       cursor: pointer;
+      color: var(--iconColor);
 
       &:hover {
-        background-color: rgb(241, 126, 126);
+        background-color: var(--secondaryColor);
       }
     }
   }
